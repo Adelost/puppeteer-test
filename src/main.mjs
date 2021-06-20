@@ -2,12 +2,12 @@ import puppeteer from 'puppeteer';
 import to from 'await-to';
 import { Page } from "./utils.mjs";
 
-const HEADLESS = false;
-
-// Puppeteer API DOC
+// TIPS: See Puppeteer API DOC
 // https://devdocs.io/puppeteer/
 
-(async () => main())(); // Run main async
+const HEADLESS = false;
+
+main();
 
 async function main() {
   const browser = await puppeteer.launch({ headless: HEADLESS });
